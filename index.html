@@ -7,8 +7,6 @@
     <title>Invest Help</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,400i&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-
 </head>
 <body>
    <header class="header">
@@ -121,49 +119,18 @@
    </section>
    <section class="form__wrapper">
         <h2>Заполните анкету</h2>
-        <p>Укажите только Ваш контактный номер <br> и имя, после чего дождитесь звонка <br> нашего менеджера</p>
-        <form>
-
-                <!-- Hidden Required Fields -->
-                <input type="hidden" name="project_name" value="Sit">
-                <input type="hidden" name="admin_email" value="romakabanec997@gmail.com">
-                <input type="hidden" name="form_subject" value="Fort">
-                <!-- END Hidden Required Fields -->
-        
-                <input type="text" name="Name" placeholder="You name..." required><br>
-                <input type="text" name="E-mail" placeholder="You E-mail..." required><br>
-                <input type="text" name="Phone" placeholder="You phone..."><br>
-                <input type="submit" class="btn btn-primary">Send</input>
-        
-            </form>
-            
-          
+        <p>Укажите только Ваш контактный номер <br> и имя, после чего дождитесь звонка <br> нашего менеджера</p>        
 
    </section>
-
- 
-<script>
-$(document).ready(function() {
-
-//E-mail Ajax Send
-$("form").submit(function() { //Change
-    var th = $(this);
-    $.ajax({
-        type: "POST",
-        url: "feedback.php", //Change
-        data: th.serialize()
-    }).done(function() {
-        alert("Thank you!");
-        setTimeout(function() {
-            // Done Functions
-            th.trigger("reset");
-        }, 1000);
-    });
-    return false;
-});
-
-});</script>
-
+   <footer class="footer">
+       <div class="logo">
+        <p class="copyright">kh.invest-help ©2019</p>
+        </div>
+       <div class="contact">
+        <p>+380 <span class="colortext">(66)</span> 635 85 25</p>
+        <p>+380 <span class="colortext">(97)</span> 454 63 66</p>
+    </div>
+   </footer>
 
 </body>
 </html>
