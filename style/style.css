@@ -2,11 +2,6 @@
     margin: 0;
     padding: 0;
 }
-html{
-    height: 100%;
-    overflow-x: hidden;
-
-}
 body{
     font-family: 'Roboto', sans-serif;  
 }
@@ -368,7 +363,7 @@ header{
         margin-left: 20px;
     }
     .circle__p{
-        width: 300px;
+        width: 230px;
         margin-left: 20px;
     }
    .wrap__mob{
