@@ -281,64 +281,18 @@ header{
   .slider__item img{
       margin-top: 10px;
   }
-  .slider__control {
-    position: absolute;
-    top: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    color: #fff;
-    text-align: center;
-    opacity: 0.5;
-    height: 50px;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, .5);
-  }
-
-  .slider__control:hover,
-  .slider__control:focus {
-    color: #fff;
-    text-decoration: none;
-    outline: 0;
-    opacity: .9;
-  }
-
-  .slider__control_left {
-    left: 0;
-  }
-
-  .slider__control_right {
-    right: 0;
-  }
-
-  .slider__control::before {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: transparent no-repeat center center;
-    background-size: 100% 100%;
-  }
-
-  .slider__control_left::before {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-  }
-
-  .slider__control_right::before {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-  }
-
-  /* .slider__item>div {
-    line-height: 250px;
-    font-size: 100px;
-    text-align: center;
-  } */
 @media only screen and (min-width : 769px)  {
     .slider{
         display: none;
     }
+    
 }
+/* @media only screen and (min-width : 520px)  {
+    .slider__item{
+        width: 50%;
+    }  
+    Сделать точку на 520px
+    */
 @media only screen and (min-width : 320px) and (max-width : 768px) {
 
     .header{
@@ -490,7 +444,58 @@ header{
     .reviews__wrapper{
         display: none;
     }
-   
+   .slider__wrapper{
+    height: 550px;
+   }
 
 
+}
+
+.slider .slider__item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+} 
+
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 35%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    color: #000000;
+    font-size: 45px;
+    font-weight: 100;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
