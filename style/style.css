@@ -272,18 +272,15 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    outline: 3px solid #CFCFCF; /* Пунктирная рамка */
+    outline-offset: -10px;
     /* margin: 10px;
     width: 90%; 
     height: 100%; */
   }
-
-  @media (min-width: 980px) {
-    .slider__item {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
+  .slider__item img{
+      margin-top: 10px;
   }
-
   .slider__control {
     position: absolute;
     top: 50%;
@@ -337,7 +334,11 @@ header{
     font-size: 100px;
     text-align: center;
   } */
-
+@media only screen and (min-width : 769px)  {
+    .slider{
+        display: none;
+    }
+}
 @media only screen and (min-width : 320px) and (max-width : 768px) {
 
     .header{
@@ -454,22 +455,14 @@ header{
     flex-direction: column;
 
    } 
-   .reviews__wrapper{
+   .slider{
     padding: 0;
    }
-    .reviews__wrapper h2{
+    .slider h2{
         left: 33%;
     }
     .line{
         display: none;
-    }
-    .reviews__item{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 10px;
-        width: 90%; 
-        height: 100%;
     }
     .item{
     padding: 25px;
@@ -494,6 +487,10 @@ header{
     .footer{
         height: 130px;
     }
+    .reviews__wrapper{
+        display: none;
+    }
+   
 
 
 }
