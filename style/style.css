@@ -63,13 +63,10 @@ a{
     background-color: #FFB423;
     font-weight: bold;
     font-size: 30px;
-    /* line-height: 90px; */
+    line-height: 90px;
     margin-top: 50px ;
     border: none;
     cursor: pointer;
-}
-.main .btn{
-    line-height: 90px;
 }
 .why_me__wrapper{
     padding-left: 10%;
@@ -352,6 +349,7 @@ input[type="text"]::-webkit-input-placeholder {
 }
 .form .btn{
     margin: 0;
+    padding: 0;
 }
 
 .slider .slider__item {
@@ -376,15 +374,7 @@ input[type="text"]::-webkit-input-placeholder {
         opacity: 1
     }
 } 
-
-/* @media only screen and (min-width : 520px)  {
-    .slider__item{
-        width: 50%;
-    }  
-    Сделать точку на 520px
-    */
 @media only screen and (min-width : 320px) and (max-width : 768px) {
-
     .header{
         height: 115px; 
     }
@@ -413,6 +403,7 @@ input[type="text"]::-webkit-input-placeholder {
         padding-top: 16px;
     }
     .btn{
+      
         width: 226px;
         height: 64px;
         font-size: 20px;
@@ -536,24 +527,31 @@ input[type="text"]::-webkit-input-placeholder {
         display: none;
     }
    .slider__wrapper{
-    height: 550px;
+    height: 750px;
    }
    .form{
      display: none;
      margin-top: 25px;
      width: 100%;
-    margin-left: -5px;
+     margin-left: -5px;
    }
    form{
     display: flex;
     flex-direction: column;
     align-items: center;
    }
+
+
+
    .arrow {
        display: block;
     margin-top: 20px;
     margin-left: 50%;
 }
+@media only screen and (min-width : 769px) and (max-width : 1366px) {
+
+}
+
 .arrow span {
     display: block;
     width: 30px;
@@ -588,6 +586,82 @@ input[type="text"]::-webkit-input-placeholder {
 @media only screen and (min-width : 769px)  {
     .slider{
         display: none;
+    }
+    .contact{
+         padding: 27px 61px 0px 0px;
+    }
+    .title{
+        width: 25vw;
+        margin-top: -83px;
+        height: 5em;
+    }
+    .title h2{
+         font-size: 30px;
+    }
+    .item__p__title{
+        font-size: 25px;
+    }
+    .item__p{
+        font-size: 16px;
+    }
+    .why_me__item{
+        height: 285px;
+    }
+
+    .progress__wrapper{
+        height: 1100px;
+    }
+     .rectangle{
+         display: flex;
+         flex-flow: column;
+         justify-content: space-between;
+         margin-top: 0;
+         height: 850px;
+         width: 24.42px;
+         margin-left: 15%;
+         margin-top: 40px;
+     }
+     .circle {
+         display: flex;
+         align-self: flex-start;
+         margin-left: -150%;
+         margin-top: -10%;
+     }
+     .circle__p__title{
+         font-size: 25px;
+         margin-top: 11%;
+         margin-left: 20px;
+     }
+     .circle__p{
+         width: 230px;
+         margin-left: 20px;
+     }
+    .wrap__mob{
+     display: flex;
+     flex-direction: column;
+ 
+    } 
+    .item{
+        font-size: 14px;
+    line-height: 24px;
+    color:#787878;
+    padding: 15px 0px 15px 30px;
+    line-height: 22px;
+    }
+    .name__span{
+        font-size: 20px;
+    }
+    .reviews__item{
+        height: 323px;
+    }
+    .line{
+        height: 230px;
+    }
+    .form{
+    width: 100%;
+    height: 494px;
+    margin-left: 0;
+    margin-top: 20px;
     }
     
 }
