@@ -58,12 +58,15 @@ a{
     line-height: 37px;
     padding-top: 16px;
 }
+.main .btn{
+    line-height: 90px;
+}
 .btn{
     width: 309px;
     background-color: #FFB423;
     font-weight: bold;
     font-size: 30px;
-    line-height: 90px;
+  
     margin-top: 50px ;
     border: none;
     cursor: pointer;
@@ -548,9 +551,7 @@ input[type="text"]::-webkit-input-placeholder {
     margin-top: 20px;
     margin-left: 50%;
 }
-@media only screen and (min-width : 769px) and (max-width : 1366px) {
 
-}
 
 .arrow span {
     display: block;
@@ -583,7 +584,7 @@ input[type="text"]::-webkit-input-placeholder {
 }
 
 }
-@media only screen and (min-width : 769px)  {
+@media only screen and (min-width : 769px) and (max-width: 1023px)  {
     .slider{
         display: none;
     }
@@ -662,6 +663,24 @@ input[type="text"]::-webkit-input-placeholder {
     height: 494px;
     margin-left: 0;
     margin-top: 20px;
+  
+    }
+    .form__wrapper h2 {
+        padding-top: 42px;
+        padding-bottom: 23px;
+        font-size: 52px;
+        line-height: 65px;
+        
     }
     
 }
+
+
+
+
+
+
+
+/* .slider{
+    display: none;
+} */
