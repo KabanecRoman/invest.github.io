@@ -11,6 +11,9 @@ header{
     background-color: #0e0f38;
     border-bottom: 3px solid white; 
 }
+a{
+    text-decoration: none;
+}
 .logo{
     display: inline-block;
     padding-left: 10%;
@@ -56,15 +59,17 @@ header{
     padding-top: 16px;
 }
 .btn{
-    position: absolute;
     width: 309px;
     background-color: #FFB423;
     font-weight: bold;
     font-size: 30px;
-    line-height: 90px;
+    /* line-height: 90px; */
     margin-top: 50px ;
     border: none;
     cursor: pointer;
+}
+.main .btn{
+    line-height: 90px;
 }
 .why_me__wrapper{
     padding-left: 10%;
@@ -212,9 +217,10 @@ header{
     padding: 15px 106px 15px 30px ;
 }
 .form__wrapper{
-    padding-top: 40px; 
+    /* padding-top: 40px;  */
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 10%;
     height: 800px;
     padding-left: 10%;
 
@@ -498,4 +504,41 @@ header{
 .slider .prev:hover,
 .slider .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+.form{
+    background-color: #fff;
+    width: 38.5vw;
+    height: 494px;
+    /* margin-top: 320px ;
+    margin-right: 620px; */
+    margin-left: 50%;
+    margin-top: -10%;
+}
+form{
+    text-align: center;
+    padding-top: 90px;
+}
+input{
+    width: 360px;
+height: 77px;
+background: #FFFFFF;
+border: 3px solid #CFCFCF;
+box-sizing: border-box;
+margin-bottom: 60px;
+padding-left: 20px;
+text-decoration: none;
+}
+input[placeholder] {
+    color: #989898;
+    font-size: 30px;
+    line-height: 90px;
+    }
+input[type="text"]::-webkit-input-placeholder {
+    color: #989898;
+ } 
+   input[type="text"]::-moz-placeholder {
+    color: #989898;
+}
+.form .btn{
+    margin: 0;
 }
