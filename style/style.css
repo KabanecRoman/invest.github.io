@@ -157,7 +157,8 @@ a{
     height: 35px;
     background-color: #fff;
     /* margin-top: 393px;*/
-    margin-top: 40vh;
+    margin-top: 40vh; 
+    /* было 40  */
     margin-left: 20px;
 }
 .circle{
@@ -711,5 +712,15 @@ input[type="text"]::-webkit-input-placeholder {
 @media only screen and (min-width : 1599px) {
 .slider{
     display: none;
-}}
+}
+.rectangle{
+    margin-top: 20vh; 
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 27.5vw;
+}
 
