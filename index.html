@@ -24,8 +24,8 @@
                         под залог недвижимости</h1>
                     <p>А также помощь при покупке недвижимости <br>
                             и открытии бизнеса</p>
-                    <button class="btn">Заказать звонок</button>
-            </div>  
+                            <a href="#form_"><button class="btn"> Заказать звонок</button></a>
+            </div>      
    </section>
    <section class="why_me__wrapper">
         <div class="title"> <h2>Почему мы?</h2></div>
@@ -133,7 +133,6 @@
         </div>
        </section>
    <!-- slider -->
-   
   <div class="slider">
     <div class="title"> <h2> Отзывы</h2></div>
     <div class="slider__wrapper">
@@ -164,10 +163,16 @@
     <a class="next" onclick="plusSlide()">&#10095;</a>
   </div>
     <!-- slider -->
-   <section class="form__wrapper">
+   <section class="form__wrapper" id="form">
         <h2>Заполните анкету</h2>
-        <p>Укажите только Ваш контактный номер <br> и имя, после чего дождитесь звонка <br> нашего менеджера</p>        
-
+        <p>Укажите только Ваш контактный номер <br> и имя, после чего дождитесь звонка <br> нашего менеджера</p> 
+        <div class="form">
+            <form  action="https://formspree.io/mjvvnvbq" method="POST">
+            <input type="text" name="name" placeholder="Ваше Имя">
+            <input  id ="tel"type="text" name="text" placeholder="Контактный номер" value="+380">
+            <input class = "btn" type="submit" value="Заказать звонок">
+          </form>
+        </div>       
    </section>
    <footer class="footer">
        <div class="logo">
@@ -178,6 +183,6 @@
         <p>+380 <span class="colortext">(97)</span> 454 63 66</p>
     </div>
    </footer>
-   <script src="/script.js"></script>
+   <script type="text/javascript" src="/script.js"></script>
 </body>
 </html>
