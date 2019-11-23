@@ -672,9 +672,42 @@ input[type="text"]::-webkit-input-placeholder {
         line-height: 65px;
         
     }
-    
 }
-
+@media only screen and (min-width : 1024px) and (max-width : 1279px){
+    .slider{
+        display: none;
+    }
+    .title h2{
+        font-size: 52px;
+    }
+    .circle__p__title{
+        font-size: 22px;
+    }
+    .circle__p{
+        font-size: 20px;
+        padding-top: 16px;
+    }
+    .rectangle{
+        margin-top: 250px;
+    }
+    .line{
+        height: 230px;
+    }
+    .item{
+    font-size: 18px;
+    line-height: 28px;
+    color:#787878;
+    padding: 15px 0px 15px 30px;
+    line-height: 22px;
+    }
+    .form{
+        margin-top: 0;
+    }
+}
+@media only screen and (min-width : 1600px) and {
+.slider{
+    display: none;
+}
 
 
 
