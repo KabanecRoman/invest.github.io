@@ -91,7 +91,7 @@ a{
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding-top: 20px; 
+    padding-top: 50px; 
 
 }
 .why_me__item{
@@ -125,6 +125,7 @@ a{
     line-height: 37px;
     color: #000000;
     padding-top: 34px;
+    padding-bottom: 14px;
 }
 .item__p{
     font-style: normal;
@@ -186,7 +187,7 @@ a{
     height: 35px;
     background-color: #fff;
     /* margin-top: 393px;*/
-    margin-top: 20vh; 
+    margin-top: 330px; 
     margin-left: 20px;
 }
 .circle{
@@ -241,11 +242,13 @@ a{
     border-right: 5px solid #3B4EC8;
 }
 .name__span{
+    font-family: 'Proxima Nova', sans-serif; 
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
-    line-height: 28px;
+    line-height: 35px;
     color: #000000;
+
 }
 .item{
     font-style: italic;
@@ -376,14 +379,13 @@ a{
     background-color: #fff;
     width: 38.5vw;
     height: 494px;
-    /* margin-top: 320px ;
-    margin-right: 620px; */
     margin-left: 50%;
     margin-top: -10%;
 }
 form{
     text-align: center;
     padding-top: 90px;
+    color: #000000;
 }
 input{
     width: 360px;
@@ -391,13 +393,16 @@ height: 77px;
 background: #FFFFFF;
 border: 3px solid #CFCFCF;
 -webkit-box-sizing: border-box;
-        box-sizing: border-box;
+box-sizing: border-box;
 margin-bottom: 60px;
 padding-left: 20px;
 text-decoration: none;
+
+
 }
+
 input[placeholder] {
-    color: #989898;
+    color: #000;
     font-size: 30px;
     line-height: 90px;
     }
@@ -460,12 +465,14 @@ input[type="text"]::-webkit-input-placeholder {
         font-style: normal;
         font-size: 15px;
         line-height: 28px;
+
     }
-    .contact p{
-        color: #FFFFFF;
+    .footer .contact{
+        padding-top: 0;
+        padding-left: 2%;
+        padding-right: 8%;
+        float: none;
     }
-    /*  */
-    
     .main__text{
       padding: 32px 55px 0 10px;
     }
@@ -508,9 +515,6 @@ input[type="text"]::-webkit-input-placeholder {
      .why_me__wrapper{
          padding: 0;
      }
-    .item__p__title{
-        padding-bottom: 37px;
-    }
     .why_me{
         display: -webkit-box;
         display: -ms-flexbox;
@@ -522,6 +526,7 @@ input[type="text"]::-webkit-input-placeholder {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+                padding: 0;
     }
     .why_me__item{
         width: 90%;
@@ -602,7 +607,7 @@ input[type="text"]::-webkit-input-placeholder {
         display: none;
     }
     .copyright{
-        padding-top: 10px;
+        padding-bottom: 25px;
         font-size: 20px;
     }
     .form__wrapper {
