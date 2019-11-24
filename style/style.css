@@ -468,8 +468,7 @@ input[type="text"]::-webkit-input-placeholder {
     }
     .main__text h1{
         font-size: 35px;
-        line-height: 30px;
-        /* 42 */
+        line-height: 42px;
     }
     .main__text p {
         font-size: 20px;
@@ -498,7 +497,7 @@ input[type="text"]::-webkit-input-placeholder {
     }
     .title h2 {
         font-size: 35px;
-        line-height: 76px;
+        line-height: 50px;
      }
      .why_me__wrapper{
          padding: 0;
