@@ -882,5 +882,23 @@ input[type="text"]::-webkit-input-placeholder {
 
 }
 @media only screen and (min-width : 320px) and (max-width : 375px){
-    
+    .circle__p{
+        font-size: 18px;
+    }
+    .circle__p__title{
+        font-size: 20px;
+    }
+    .item{
+        font-size: 15px;
+
+    }
+    .slider .prev:hover, .slider .next:hover {
+        background-color: 
+        rgba(0, 0, 0, 0.1);
+    }
+    .input {
+        width: 287px;
+        height: 70px;
+        
+}
 }
