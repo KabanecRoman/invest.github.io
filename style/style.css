@@ -460,6 +460,7 @@ input[type="text"]::-webkit-input-placeholder {
         font-style: normal;
         font-size: 15px;
         line-height: 28px;
+        color: #FFFFFF;
     }
     /*  */
     
@@ -488,6 +489,7 @@ input[type="text"]::-webkit-input-placeholder {
         height: 550px;
         margin-bottom: 0;
         background-attachment: scroll; 
+        /* OsI */
         background-size: cover; 
        
     }
