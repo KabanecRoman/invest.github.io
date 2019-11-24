@@ -35,13 +35,56 @@
                 <p class="item__p__title">Услуги</p>
                 <p class="item__p">предоставляются</br>
                 в день обращения</p>
-                <p class="arrow_p">Ещё</p>
+            </div>
+            
+            <div class="why_me__item ">
+                <img src="./img/icon_2.png" alt="">
+                <p class="item__p__title">Помощь</p>
+                <p class="item__p">в оформлении<br>
+                   документов</p>
+            </div>
+            <div class="why_me__item ">
+                <img src="./img/icon_3.png" alt="">
+                 <p class="item__p__title">Минимальная </p>
+                 <p class="item__p">процентная ставка,<br>
+                        под каждого клиента,<br>
+                        индивидуально</p>
+            </div>
+            <div class="why_me__item ">
+                <img src="./img/icon_4.png" alt="">
+                <p class="item__p__title">Быстрая</p>
+                <p class="item__p">помощь при покупке,<br>
+                        недвижимости</p>
+            </div>
+            <div class="why_me__item  ">
+                <img src="./img/icon_5.png" alt="">
+                <p class="item__p__title">Более 1000 </p>
+                <p class="item__p">клиентов за все,<br>
+                        время работы</p>
+            </div>
+            <div class="why_me__item ">
+                <img src="./img/icon_6.png" alt="">
+                <p class="item__p__title">Лет на рынке</p>
+                <p class="item__p">в условиях <br>
+                        стабильного развития</p>
+            </div>    
+       
+    </div>  
+   </section> 
+   <section class="why_me__wrapper__mobile">
+        <div class="title"> <h2>Почему мы?</h2></div>
+        <div class="why_me">
+            <div class="why_me__item ">
+                <img src="./img/icon_1.png" alt="">
+                <p class="item__p__title">Услуги</p>
+                <p class="item__p">предоставляются</br>
+                в день обращения</p>
+                <p class="arrow_p"  onclick="arrow()">Ещё</p>
                 <div class="arrow" onclick="arrow()">
-                  
                     <span></span>
                 </div>
             </div>
-            <div class= "HHH ">
+            <div class= "HHH why_me">
             <div class="why_me__item ">
                 <img src="./img/icon_2.png" alt="">
                 <p class="item__p__title">Помощь</p>
@@ -76,7 +119,6 @@
         </div>
     </div>  
    </section> 
-
 
    <section class="progress__wrapper">
         <div class="title"> <h2> Все просто</h2></div>
@@ -189,6 +231,7 @@
    </footer>
 
    <script >
+   
    var slideIndex = 1;
 showSlides(slideIndex);
 function plusSlide() {
@@ -236,9 +279,8 @@ window.addEventListener("DOMContentLoaded", function() {
 
     function arrow(){
 	var object = document.querySelector(".HHH");
-    // var size = document.querySelector(".form__wrapper");
-    // size.style.height='800px' ;
-    object.style.display = 'block'
+    object.style.display == 'none' ? object.style.display = 'block' : object.style.display = 'none'
+    
     }
 </script>
 
