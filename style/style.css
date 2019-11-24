@@ -66,7 +66,6 @@ a{
     background-color: #FFB423;
     font-weight: bold;
     font-size: 30px;
-  
     margin-top: 50px ;
     border: none;
     cursor: pointer;
@@ -381,6 +380,7 @@ input[type="text"]::-webkit-input-placeholder {
 .slider{
     display: none;}
 @media only screen and (min-width : 320px) and (max-width : 768px) {
+    
     .slider{
         display: block;}
     .header{
@@ -392,7 +392,9 @@ input[type="text"]::-webkit-input-placeholder {
         padding-left: 10px;
     }
     .contact{
-        padding: 8%;
+        padding-top: 8%;
+        padding-left: 8%;
+        padding-right: 8%;
         font-style: normal;
         font-size: 15px;
         line-height: 28px;
@@ -410,7 +412,7 @@ input[type="text"]::-webkit-input-placeholder {
         line-height: 28px;
         padding-top: 16px;
     }
-    .btn{
+    .main .btn{
       
         width: 226px;
         height: 64px;
@@ -519,7 +521,7 @@ input[type="text"]::-webkit-input-placeholder {
     }
     .form__wrapper {
         padding: 0 0 0 10px;
-        height: 400px;
+        height: 800px;
     }
 
     .form__wrapper h2{
@@ -538,10 +540,10 @@ input[type="text"]::-webkit-input-placeholder {
     height: 750px;
    }
    .form{
-     display: none;
      margin-top: 25px;
      width: 100%;
      margin-left: -5px;
+     
    }
    form{
     display: flex;
@@ -552,12 +554,18 @@ input[type="text"]::-webkit-input-placeholder {
 
 
    .arrow {
-       display: block;
+    display: block;
     margin-top: 20px;
     margin-left: 50%;
 }
-
-
+    .HHH{
+    display: none;
+    width: 90%;
+    /* margin-left: 10%; */
+}
+.HHH .why_me__item{
+    width: 100%;
+}
 .arrow span {
     display: block;
     width: 30px;
@@ -567,6 +575,12 @@ input[type="text"]::-webkit-input-placeholder {
     transform: rotate(45deg);
     margin: -16px;
     animation: arrow-7 2s infinite;
+}
+.arrow_p{
+    font-size: 30px;
+
+    line-height: 20px;
+    padding-top:25px;
 }
 .arrow span:nth-child(2){
     animation-delay: -0.2s;
@@ -724,3 +738,4 @@ input[type="text"]::-webkit-input-placeholder {
     width: 27.5vw;
 }
 
+}
