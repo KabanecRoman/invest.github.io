@@ -35,38 +35,45 @@
                 <p class="item__p__title">Услуги</p>
                 <p class="item__p">предоставляются</br>
                 в день обращения</p>
+                <p class="arrow_p">Ещё</p>
+                <div class="arrow" onclick="arrow()">
+                  
+                    <span></span>
+                </div>
             </div>
-            <div class="why_me__item">
+            <div class= "HHH ">
+            <div class="why_me__item ">
                 <img src="./img/icon_2.png" alt="">
                 <p class="item__p__title">Помощь</p>
                 <p class="item__p">в оформлении<br>
                    документов</p>
             </div>
-            <div class="why_me__item">
+            <div class="why_me__item ">
                 <img src="./img/icon_3.png" alt="">
                  <p class="item__p__title">Минимальная </p>
                  <p class="item__p">процентная ставка,<br>
                         под каждого клиента,<br>
                         индивидуально</p>
             </div>
-            <div class="why_me__item">
+            <div class="why_me__item ">
                 <img src="./img/icon_4.png" alt="">
                 <p class="item__p__title">Быстрая</p>
                 <p class="item__p">помощь при покупке,<br>
                         недвижимости</p>
             </div>
-            <div class="why_me__item">
+            <div class="why_me__item  ">
                 <img src="./img/icon_5.png" alt="">
                 <p class="item__p__title">Более 1000 </p>
                 <p class="item__p">клиентов за все,<br>
                         время работы</p>
             </div>
-            <div class="why_me__item">
+            <div class="why_me__item ">
                 <img src="./img/icon_6.png" alt="">
                 <p class="item__p__title">Лет на рынке</p>
                 <p class="item__p">в условиях <br>
                         стабильного развития</p>
             </div>    
+        </div>
     </div>  
    </section> 
 
@@ -162,11 +169,7 @@
         <h2>Заполните анкету</h2>
 
         <p>Укажите только Ваш контактный номер <br> и имя, после чего дождитесь звонка <br> нашего менеджера</p> 
-        <div class="arrow" onclick="arrow()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+       
         <div class="form">
             <form  action="https://formspree.io/mjvvnvbq" method="POST">
             <input type="text" name="name" placeholder="Ваше Имя">
@@ -230,10 +233,11 @@ window.addEventListener("DOMContentLoaded", function() {
   });
   document.querySelector("#tel").onkeydown = function (e) {
     return !(/^[А-Яа-яA-Za-z ]$/.test(e.key)); }
+
     function arrow(){
-	var object = document.querySelector(".form");
-    var size = document.querySelector(".form__wrapper");
-    size.style.height='800px' ;
+	var object = document.querySelector(".HHH");
+    // var size = document.querySelector(".form__wrapper");
+    // size.style.height='800px' ;
     object.style.display = 'block'
     }
 </script>
